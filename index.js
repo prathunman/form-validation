@@ -15,8 +15,10 @@ function setError(id,message){
         error.innerText=message;
         id.classList.add('text-red-600');
     }
-    id.placeholder = message;
-    id.classList.add('placeholder-red-600');
+    else{
+        id.placeholder = message;
+        id.classList.add('placeholder-red-600');
+    }
 }
 function setSuccess(){
     fname.classList.add('border-green-400')
